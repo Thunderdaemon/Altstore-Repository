@@ -1,0 +1,43 @@
+{
+  "name": "YTMusicUltimate",
+  "identifier": "com.mrdrvt99.ytm",
+  "apiVersion": "v2",
+  "subtitle": "Automated YTMusicUltimate IPA builds",
+  "description": "AltStore/SideStore/Feather source for YTMusicUltimate. No ads, background playback, and more.",
+  "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTubeMusic.png",
+  "website": "https://github.com/mrdrvt99/Altstore-Repository",
+  "sourceURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/ytmusic.json",
+  "apps": [
+    {
+      "name": "YTMusicUltimate",
+      "bundleIdentifier": "com.google.ios.youtubemusic",
+      "developerName": "dayanch96",
+      "subtitle": "YTMusicUltimate",
+      "category": "music",
+      "version": "9.19.5",
+      "versionDate": "2026-05-14",
+      "versionDescription": "YTMusicUltimate 9.19.5 | YTMusic 2.4.1 | YTMusicUltimate_9.19.5_2.4.1",
+      "downloadURL": "https://github.com/mrdrvt99/YTMusicUltimate/releases/download/ytmu-ipa1/YTMusicUltimate_9.19.5_2.4.1.ipa",
+      "size": 98908311,
+      "localizedDescription": "YTMusicUltimate mod. Includes no ads, background playback, and more.",
+      "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTubeMusic.png",
+      "tintColor": "FF0000",
+      "screenshotURLs": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": [
+        {
+          "version": "9.19.5",
+          "date": "2026-05-14",
+          "localizedDescription": "YTMusicUltimate 9.19.5 | YTMusic 2.4.1 | YTMusicUltimate_9.19.5_2.4.1",
+          "downloadURL": "https://github.com/mrdrvt99/YTMusicUltimate/releases/download/ytmu-ipa1/YTMusicUltimate_9.19.5_2.4.1.ipa",
+          "size": 98908311,
+          "minOSVersion": "16.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
