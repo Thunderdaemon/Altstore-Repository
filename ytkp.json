@@ -14,11 +14,11 @@
       "developerName": "iKarwan",
       "subtitle": "YTKP",
       "category": "photo-video",
-      "version": "21.20.4",
-      "versionDate": "2026-05-21",
-      "versionDescription": "YouTube 21.20.4 | YTKillerPlus_21.20.4_5.3.2",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa1/YTKillerPlus_21.20.4_5.3.2.ipa",
-      "size": 134648312,
+      "version": "21.21.3",
+      "versionDate": "2026-05-23",
+      "versionDescription": "YouTube 21.21.3 | YTKillerPlus_21.21.3_5.3.2",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa1/YTKillerPlus_21.21.3_5.3.2.ipa",
+      "size": 134873096,
       "localizedDescription": "YTKillerPlus mod. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and more.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
@@ -50,11 +50,11 @@
       },
       "versions": [
         {
-          "version": "21.20.4",
-          "date": "2026-05-21",
-          "localizedDescription": "YouTube 21.20.4 | YTKillerPlus_21.20.4_5.3.2",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa1/YTKillerPlus_21.20.4_5.3.2.ipa",
-          "size": 134648312,
+          "version": "21.21.3",
+          "date": "2026-05-23",
+          "localizedDescription": "YouTube 21.21.3 | YTKillerPlus_21.21.3_5.3.2",
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa1/YTKillerPlus_21.21.3_5.3.2.ipa",
+          "size": 134873096,
           "minOSVersion": "16.0"
         }
       ]
