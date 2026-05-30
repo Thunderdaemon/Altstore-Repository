@@ -24,8 +24,20 @@
       "tintColor": "FF0000",
       "screenshotURLs": [],
       "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
+        "entitlements": [
+          "com.apple.security.application-groups",
+          "com.apple.developer.associated-domains",
+          "com.apple.developer.coremedia.allow-alternate-video-decoder-selection",
+          "com.apple.developer.storekit.request-data",
+          "keychain-access-groups",
+          "com.apple.developer.networking.multicast",
+          "com.apple.developer.networking.wifi-info"
+        ],
+        "privacy": {
+          "NSAppleMusicUsageDescription": "Allows access to Apple Music for background playback and media features.",
+          "NSBluetoothPeripheralUsageDescription": "Used for connecting to Bluetooth headphones and audio devices.",
+          "NSLocalNetworkUsageDescription": "Used to discover and cast audio to devices on your local network."
+        }
       },
       "versions": [
         {
