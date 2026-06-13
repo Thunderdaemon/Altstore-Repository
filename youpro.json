@@ -15,10 +15,10 @@
       "subtitle": "YouPro",
       "category": "photo-video",
       "version": "21.22.4",
-      "versionDate": "2026-05-30",
+      "versionDate": "2026-06-13",
       "versionDescription": "YouTube 21.22.4 | YouProExtra_21.22.4_0.3",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa2/YouProExtra_21.22.4_0.3.ipa",
-      "size": 122895333,
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa1/YouProExtra_21.22.4_0.3.ipa",
+      "size": 122893475,
       "localizedDescription": "YouPro mod. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and more.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
@@ -51,10 +51,10 @@
       "versions": [
         {
           "version": "21.22.4",
-          "date": "2026-05-30",
+          "date": "2026-06-13",
           "localizedDescription": "YouTube 21.22.4 | YouProExtra_21.22.4_0.3",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa2/YouProExtra_21.22.4_0.3.ipa",
-          "size": 122895333,
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa1/YouProExtra_21.22.4_0.3.ipa",
+          "size": 122893475,
           "minOSVersion": "16.0"
         }
       ]
