@@ -14,11 +14,11 @@
       "developerName": "dayanch96",
       "subtitle": "YTLite",
       "category": "photo-video",
-      "version": "21.22.4",
-      "versionDate": "2026-06-13",
-      "versionDescription": "YouTube 21.22.4 | YouTubePlus_21.22.4_5.2.1",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa1/YouTubePlus_21.22.4_5.2.1.ipa",
-      "size": 132128041,
+      "version": "21.24.3",
+      "versionDate": "2026-06-14",
+      "versionDescription": "YouTube 21.24.3 | YouTubePlus_21.24.3_5.2.1",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa1/YouTubePlus_21.24.3_5.2.1.ipa",
+      "size": 128957068,
       "localizedDescription": "YTLite mod. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and more.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
@@ -50,11 +50,11 @@
       },
       "versions": [
         {
-          "version": "21.22.4",
-          "date": "2026-06-13",
-          "localizedDescription": "YouTube 21.22.4 | YouTubePlus_21.22.4_5.2.1",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa1/YouTubePlus_21.22.4_5.2.1.ipa",
-          "size": 132128041,
+          "version": "21.24.3",
+          "date": "2026-06-14",
+          "localizedDescription": "YouTube 21.24.3 | YouTubePlus_21.24.3_5.2.1",
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa1/YouTubePlus_21.24.3_5.2.1.ipa",
+          "size": 128957068,
           "minOSVersion": "16.0"
         }
       ]
