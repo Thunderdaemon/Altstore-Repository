@@ -14,11 +14,11 @@
       "developerName": "dayanch96",
       "subtitle": "YTMusicUltimate",
       "category": "music",
-      "version": "9.23.4",
-      "versionDate": "2026-06-14",
-      "versionDescription": "YTMusicUltimate 9.23.4 | YTMusic 2.4.1 | YTMusicUltimate_9.23.4_2.4.1\n\nadded Return YouTubeMusic Dislikes, YTMABConfig, YouMusicPiP and VolumeBoostYT",
-      "downloadURL": "https://github.com/mrdrvt99/YTMusicUltimate/releases/download/ytmu-ipa10/YTMusicUltimate_9.23.4_2.4.1.ipa",
-      "size": 99883247,
+      "version": "9.24.2",
+      "versionDate": "2026-06-15",
+      "versionDescription": "YTMusicUltimate 9.24.2 | YTMusic 2.4.1 | YTMusicUltimate_9.24.2_2.4.1\n\nadded Return YouTubeMusic Dislikes, YTMABConfig, YouMusicPiP and VolumeBoostYT",
+      "downloadURL": "https://github.com/mrdrvt99/YTMusicUltimate/releases/download/ytmu-ipa12/YTMusicUltimate_9.24.2_2.4.1.ipa",
+      "size": 95746700,
       "localizedDescription": "YTMusicUltimate mod. Includes no ads, background playback, and more.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTubeMusic.png",
       "tintColor": "FF0000",
@@ -41,11 +41,11 @@
       },
       "versions": [
         {
-          "version": "9.23.4",
-          "date": "2026-06-14",
-          "localizedDescription": "YTMusicUltimate 9.23.4 | YTMusic 2.4.1 | YTMusicUltimate_9.23.4_2.4.1\n\nadded Return YouTubeMusic Dislikes, YTMABConfig, YouMusicPiP and VolumeBoostYT",
-          "downloadURL": "https://github.com/mrdrvt99/YTMusicUltimate/releases/download/ytmu-ipa10/YTMusicUltimate_9.23.4_2.4.1.ipa",
-          "size": 99883247,
+          "version": "9.24.2",
+          "date": "2026-06-15",
+          "localizedDescription": "YTMusicUltimate 9.24.2 | YTMusic 2.4.1 | YTMusicUltimate_9.24.2_2.4.1\n\nadded Return YouTubeMusic Dislikes, YTMABConfig, YouMusicPiP and VolumeBoostYT",
+          "downloadURL": "https://github.com/mrdrvt99/YTMusicUltimate/releases/download/ytmu-ipa12/YTMusicUltimate_9.24.2_2.4.1.ipa",
+          "size": 95746700,
           "minOSVersion": "16.0"
         }
       ]
