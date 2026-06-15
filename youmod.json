@@ -15,10 +15,10 @@
       "subtitle": "YouMod",
       "category": "photo-video",
       "version": "21.24.3",
-      "versionDate": "2026-06-14",
-      "versionDescription": "YouTube 21.24.3 | YouMod_21.24.3_1.3.0",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-customdeb-ipa1/YouMod_21.24.3_1.3.0.ipa",
-      "size": 119918587,
+      "versionDate": "2026-06-15",
+      "versionDescription": "YouTube 21.24.3 | YouMod_21.24.3_1.3.0\n\nupdated build",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-customdeb-ipa2/YouMod_21.24.3_1.3.0.ipa",
+      "size": 119880092,
       "localizedDescription": "YouMod mod. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and more.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
@@ -51,10 +51,10 @@
       "versions": [
         {
           "version": "21.24.3",
-          "date": "2026-06-14",
-          "localizedDescription": "YouTube 21.24.3 | YouMod_21.24.3_1.3.0",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-customdeb-ipa1/YouMod_21.24.3_1.3.0.ipa",
-          "size": 119918587,
+          "date": "2026-06-15",
+          "localizedDescription": "YouTube 21.24.3 | YouMod_21.24.3_1.3.0\n\nupdated build",
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-customdeb-ipa2/YouMod_21.24.3_1.3.0.ipa",
+          "size": 119880092,
           "minOSVersion": "16.0"
         }
       ]
