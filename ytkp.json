@@ -15,10 +15,10 @@
       "subtitle": "YTKP",
       "category": "photo-video",
       "version": "21.24.3",
-      "versionDate": "2026-06-16",
-      "versionDescription": "YouTube 21.24.3 | YTKillerPlus_21.24.3_5.3.2\n\nreverted back to 5.3.2 until new updates are cracked properly\r\nenjoy!",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa1/YTKillerPlus_21.24.3_5.3.2.ipa",
-      "size": 131943871,
+      "versionDate": "2026-06-17",
+      "versionDescription": "YouTube 21.24.3 | YTKillerPlus_21.24.3_5.6.1\n\nupdated the build! 5.6.1 cracked by [@itzzace0](https://t.me/itzzace0)",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa2/YTKillerPlus_21.24.3_5.6.1.ipa",
+      "size": 132408540,
       "localizedDescription": "YTKillerPlus mod. Includes no ads, background playback, downloads, iSponsorBlock, PiP, and more.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
@@ -51,10 +51,10 @@
       "versions": [
         {
           "version": "21.24.3",
-          "date": "2026-06-16",
-          "localizedDescription": "YouTube 21.24.3 | YTKillerPlus_21.24.3_5.3.2\n\nreverted back to 5.3.2 until new updates are cracked properly\r\nenjoy!",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa1/YTKillerPlus_21.24.3_5.3.2.ipa",
-          "size": 131943871,
+          "date": "2026-06-17",
+          "localizedDescription": "YouTube 21.24.3 | YTKillerPlus_21.24.3_5.6.1\n\nupdated the build! 5.6.1 cracked by [@itzzace0](https://t.me/itzzace0)",
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytkp-ipa2/YTKillerPlus_21.24.3_5.6.1.ipa",
+          "size": 132408540,
           "minOSVersion": "16.0"
         }
       ]
