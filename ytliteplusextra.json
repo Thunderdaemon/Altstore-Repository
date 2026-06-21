@@ -1,0 +1,39 @@
+{
+  "name": "YTLitePlusEXTRA",
+  "identifier": "com.thunderdaemon.ytliteplusextra",
+  "apiVersion": "v2",
+  "subtitle": "Automated YTLitePlusEXTRA IPA builds",
+  "description": "AltStore/Feather/SideStore/LiveContainer source for YTLitePlusEXTRA, auto-synced from each build on Thunderdaemon/YTLitePlusEXTRA.",
+  "iconURL": "https://raw.githubusercontent.com/Thunderdaemon/Altstore-Repository/main/assets/YouTube.png",
+  "website": "https://github.com/Thunderdaemon/YTLitePlusEXTRA",
+  "sourceURL": "https://raw.githubusercontent.com/Thunderdaemon/Altstore-Repository/main/ytliteplusextra.json",
+  "apps": [
+    {
+      "name": "YTLitePlusEXTRA",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "Thunderdaemon",
+      "subtitle": "YTLitePlusEXTRA",
+      "category": "photo-video",
+      "version": "0.0.0",
+      "versionDate": "2026-01-01",
+      "versionDescription": "Placeholder - replaced on first sync run.",
+      "downloadURL": "",
+      "size": 0,
+      "localizedDescription": "YTLite plus extra tweaks: YouMute, YouSpeed, YTABConfig, YouSlider, YouChooseQuality, YouShare, Gonerino, YouGetCaption, YTweaks, YTFlags, and more.",
+      "iconURL": "https://raw.githubusercontent.com/Thunderdaemon/Altstore-Repository/main/assets/YouTube.png",
+      "tintColor": "FF0000",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "0.0.0",
+          "date": "2026-01-01",
+          "localizedDescription": "Placeholder - replaced on first sync run.",
+          "downloadURL": "",
+          "size": 0,
+          "minOSVersion": "16.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}

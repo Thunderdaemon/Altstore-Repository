@@ -27,6 +27,10 @@ https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/youmod.json
 ```
 https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/ytmusic.json
 ```
+### YTLitePlusEXTRA (auto-synced from Thunderdaemon/YTLitePlusEXTRA)
+```
+https://raw.githubusercontent.com/Thunderdaemon/Altstore-Repository/main/ytliteplusextra.json
+```
 ### Esign users can also use this combined link below
 ```
 https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/apps.json

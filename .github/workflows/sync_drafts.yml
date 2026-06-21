@@ -1,0 +1,146 @@
+name: Sync Draft Releases to AltStore
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Poll every hour
+  workflow_dispatch:    # Allow manual trigger
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-drafts
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync YTLitePlusEXTRA draft release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install dependencies
+        run: pip install --quiet requests
+
+      - name: Sync latest build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_REPO: "Thunderdaemon/YTLitePlusEXTRA"
+          TARGET_REPO: ${{ github.repository }}
+        run: |
+          python3 << 'EOF'
+          import os, re, sys, json, requests
+          from datetime import datetime, timezone
+
+          token  = os.environ['GH_TOKEN']
+          source = os.environ['SOURCE_REPO']
+          target = os.environ['TARGET_REPO']
+          headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github+json'}
+
+          # 1. Find the latest draft release on the source (build) repo
+          res = requests.get(f'https://api.github.com/repos/{source}/releases', headers=headers)
+          res.raise_for_status()
+          draft = next((r for r in res.json() if r['draft']), None)
+
+          if not draft:
+              print("No draft release found on source repo. Exiting.")
+              sys.exit(0)
+
+          asset = next((a for a in draft['assets'] if a['name'].endswith('.ipa')), None)
+          if not asset:
+              print(f"Draft {draft['tag_name']} has no .ipa asset yet. Exiting.")
+              sys.exit(0)
+
+          tag = draft['tag_name']
+          print(f"Latest draft on {source}: {tag} ({asset['name']})")
+
+          # 2. Skip if we've already mirrored this exact build (idempotency)
+          check = requests.get(f'https://api.github.com/repos/{target}/releases/tags/{tag}', headers=headers)
+          if check.status_code == 200:
+              print(f"{tag} already mirrored to {target}. Nothing to do.")
+              sys.exit(0)
+
+          # 3. Download the actual IPA bytes
+          #    (Accept: application/octet-stream is required to get the binary
+          #    instead of JSON metadata when hitting the asset API URL)
+          dl_headers = {**headers, 'Accept': 'application/octet-stream'}
+          ipa_res = requests.get(asset['url'], headers=dl_headers)
+          ipa_res.raise_for_status()
+          ipa_content = ipa_res.content
+          print(f"Downloaded {len(ipa_content)} bytes")
+
+          # 4. Create a published release in this repo to host the IPA
+          rel_res = requests.post(
+              f'https://api.github.com/repos/{target}/releases',
+              headers=headers,
+              json={'tag_name': tag, 'name': draft['name'], 'draft': False}
+          )
+          rel_res.raise_for_status()
+          rel = rel_res.json()
+
+          # 5. Upload the IPA as a release asset
+          #    upload_url comes back as a URI template, e.g. ".../assets{?name,label}" -
+          #    strip the template part before appending the real query string.
+          upload_base = rel['upload_url'].split('{')[0]
+          upload_res = requests.post(
+              f"{upload_base}?name={asset['name']}",
+              headers={'Authorization': f'token {token}', 'Content-Type': 'application/octet-stream'},
+              data=ipa_content
+          )
+          upload_res.raise_for_status()
+          final_asset_url = upload_res.json()['browser_download_url']
+          print(f"Uploaded asset: {final_asset_url}")
+
+          # 6. Update the dedicated AltStore source file for this app
+          match = re.search(r'(\d+\.\d+\.\d+)', asset['name'])
+          yt_version = match.group(1) if match else "Unknown"
+          date_str = (draft.get('created_at') or datetime.now(timezone.utc).isoformat())[:10]
+          ipa_label = asset['name'].replace('.ipa', '')
+          body = (draft.get('body') or '').strip()
+          description = f"YouTube {yt_version} | {ipa_label}"
+          if body:
+              description += f"\n\n{body}"
+
+          manifest_path = 'ytliteplusextra.json'
+          with open(manifest_path) as f:
+              manifest = json.load(f)
+
+          app = manifest['apps'][0]
+          new_version_entry = {
+              "version": yt_version,
+              "date": date_str,
+              "localizedDescription": description,
+              "downloadURL": final_asset_url,
+              "size": asset['size'],
+              "minOSVersion": "16.0"
+          }
+          app['versions'] = [new_version_entry]
+          app['version'] = yt_version
+          app['versionDate'] = date_str
+          app['versionDescription'] = description
+          app['downloadURL'] = final_asset_url
+          app['size'] = asset['size']
+
+          with open(manifest_path, 'w') as f:
+              json.dump(manifest, f, indent=2, ensure_ascii=False)
+              f.write('\n')
+
+          print(f"{manifest_path} updated -> YouTube {yt_version} ({tag})")
+          EOF
+
+      - name: Commit and push manifest
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ytliteplusextra.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(altstore): sync latest YTLitePlusEXTRA build"
+            git pull --rebase
+            git push
+          fi
